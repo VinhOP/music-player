@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+    <div class="player">
+        <div class="dash-board">
+            <!-- Header -->
+            <div class="header">
+                <h3 class="status"> Now playing</h3>
+                <h2 class="song-title"> Pikasonic</h2>
+            </div>
+    
+            <!-- CD -->
+            <div class="CD">
+                <div class="cd-thumb"></div>
+            </div>
+    
+            <!-- Control -->
+            <div class="control">
+                <div class="ti-back-right button replay-button"></div>
+                <div class="ti-control-skip-backward prev-button button"></div>
+                <div class="ti-control-play play-button button"></div>
+                <div class="ti-control-skip-forward next-button button"></div>
+                <div class="ti-control-shuffle random-btn button"></div>
+            </div>
+            
+            <div class="container">
+                <input type="range" class="progress" value="0" step=".1" min="0" max="100">
+
+                <div class="volume">
+                    <input class="scroller" type="range" min="0" max="100">
+                    <i class="ti-volume volume-button button"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- List songs -->
+        <div class="play-list">
+        </div>
+
+        <audio preload="none" id="audio" src="" type="audio/mpeg"></audio>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

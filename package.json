@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "node-sass": "^7.0.1"
+  },
+  "name": "music-player",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinhOP/music-player-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinhOP/music-player-app/issues"
+  },
+  "homepage": "https://github.com/VinhOP/music-player-app#readme",
+  "description": ""
+}

@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+body .player {
+  margin: auto;
+  text-align: center;
+  padding-top: 8px;
+  position: relative;
+  max-width: 350px;
+}
+
+body .player .dash-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: inherit;
+  padding: 10px;
+  z-index: 1;
+}
+
+body .player .dash-board .header .status {
+  color: blue;
+  margin-top: 10px;
+}
+
+body .player .dash-board .CD {
+  margin: 20px;
+  width: 180px;
+  height: 180px;
+}
+
+body .player .dash-board .CD .cd-thumb {
+  background-image: url("https://yt3.ggpht.com/7QUpP5qzoTUCH7aHmjxiAHVDAO5ghWynFayJsInMcm7zQNKVPd8QiPiGWVbkrb3tiqmvL6gUCf0=s900-c-k-c0x00ffffff-no-rj");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+body .player .dash-board .control {
+  padding: 6px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  font-size: 20px;
+}
+
+body .player .dash-board .control .active {
+  color: red;
+}
+
+body .player .dash-board .play-button {
+  padding: 16px;
+  background: palevioletred;
+  border-radius: 100%;
+}
+
+body .player .dash-board .button {
+  cursor: pointer;
+}
+
+body .player .dash-board .button:hover {
+  font-weight: 800;
+}
+
+body .player .dash-board .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+body .player .dash-board .container .progress {
+  width: 100%;
+  background: #ccc;
+  opacity: 0.7;
+  height: 6px;
+}
+
+body .player .dash-board .container .progress::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+body .player .dash-board .container .volume {
+  position: relative;
+}
+
+body .player .dash-board .container .volume .scroller {
+  display: none;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: -80px;
+  left: -45px;
+  height: 3px;
+  touch-action: none;
+}
+
+body .player .dash-board .container .volume .active {
+  display: block;
+}
+
+body .player .dash-board .container .volume .volume-button {
+  margin: 0 12px;
+}
+
+body .player .play-list {
+  margin-top: 370px;
+  padding: 18px;
+}
+
+body .player .play-list .song {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+body .player .play-list .song .thumb {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+body .player .play-list .song .body {
+  text-align: left;
+  width: 160px;
+  font-size: 14px;
+  float: left;
+}
+
+body .player .play-list .song-active {
+  border: 1px solid red;
+}
+
+body .player .play-list .option {
+  background: #fff;
+  position: relative;
+  padding: 8px;
+  border-radius: 100%;
+}
+
+body .player .play-list .option:hover {
+  background: #ccc;
+}
+
+body .player .play-list .option:active:not(.song) {
+  opacity: .7;
+}
+
+body .player .play-list .option li {
+  list-style: none;
+}
+
+body .player .play-list .option .option-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  width: 80px;
+  border-radius: 5%;
+  background: #ccc;
+}
+
+body .player .play-list .option .option-menu .delete-button {
+  padding: 6px;
+  font-size: 18px;
+  -webkit-user-select: none;
+}
+
+body .player .play-list .option .selected {
+  display: block;
+}
+
+body .player .play-list .option-active {
+  background: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
