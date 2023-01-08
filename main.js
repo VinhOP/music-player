@@ -4,6 +4,7 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+const body = $('.body')
 const playButton = $('.play-button')
 const playList = $('.play-list')
 const heading = $('.header > h2')
@@ -55,22 +56,15 @@ const app = {
             id: 4,
             title: 'NeverLand',
             author: 'PIKASONIC',
-            thumbnail: './assets/img/Neverland.jpg',
-            path: './assets/music/NeverLand.mp3',
+            thumbnail: './assets/img/UnderSea.jpg',
+            path: './assets/music/UnderSea.mp3',
         },
         {
             id: 5,
-            title: 'NeverLand',
-            author: 'PIKASONIC',
-            thumbnail: './assets/img/Neverland.jpg',
-            path: './assets/music/NeverLand.mp3',
-        },
-        {
-            id: 6,
-            title: 'NeverLand',
-            author: 'PIKASONIC',
-            thumbnail: './assets/img/Neverland.jpg',
-            path: './assets/music/NeverLand.mp3',
+            title: 'AntiHero',
+            author: 'Taylor Swift',
+            thumbnail: './assets/img/AntiHero.png',
+            path: './assets/music/AntiHero.mp3',
         },
     ],
     
@@ -276,6 +270,11 @@ const app = {
             scroller.classList.toggle('active')
         }
 
+        // body.onclick = function(e) {
+        //     e.stopPropagation();
+        //     const scroller = $('.scroller')
+        //     scroller.classList.remove('active')
+        // }
         //xử lý điều chỉnh volume âm lưọng
         volumeScroller.oninput = function(e) {
             audio.volume = e.target.value / 100
